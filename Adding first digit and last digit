@@ -1,0 +1,14 @@
+//Adding first digit and last digit
+
+class Main {
+    public static void main(String[] args) {
+        int n=2312;
+       int last=n%10;
+        while(n>=10){
+            n=n/10;
+        }
+        //System.out.println(n);
+        System.out.println(last+n);
+}
+    
+}

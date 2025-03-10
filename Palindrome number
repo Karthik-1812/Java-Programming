@@ -1,0 +1,46 @@
+/* Write a program that gets n as input and print the reverse of the number
+
+Testcase 1 :
+
+Input : 
+
+325345
+
+Expected output:
+
+543523
+
+
+
+Testcase 2 :
+
+Input : 
+
+987987
+
+Expected output:
+
+789789 */
+
+
+import java.util.Scanner; 
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int original=n;
+        int sum=0;
+        while(n>0){
+            int l=n%10;  //Get last number
+            sum=10*sum+l;
+            n=n/10;  //Remove last number
+        }
+        if(original==sum){
+            System.out.println(original);
+        }
+        else{
+            System.out.println("Not a Palindrome");
+        }
+    }
+}

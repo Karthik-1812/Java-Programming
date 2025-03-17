@@ -1,0 +1,39 @@
+/* Count trailing zeroes in factorial of a number
+Last Updated : 10 Oct, 2024
+Given an integer n, write a function that returns count of trailing zeroes in n!. 
+
+Examples : 
+
+Input: n = 5
+Output: 1 
+Explanation: Factorial of 5 is 120 which has one trailing 0.
+
+
+Input: n = 20
+Output: 4
+Explanation: Factorial of 20 is 2432902008176640000 which has 4 trailing zeroes.
+
+
+Input: n = 100
+Output: 24 */
+
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        long n=sc.nextInt();
+        long fact=1;
+        for(int i=1;i<=n;i++){
+            fact=fact*i;
+        }
+        long sum=0;
+        while(fact%10==0){
+            sum++;
+            fact=fact/10;
+        }
+        System.out.println(sum);
+    }
+    
+}

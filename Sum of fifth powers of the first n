@@ -1,0 +1,42 @@
+/* Sum of fifth powers of the first n natural numbers
+Difficulty: BasicAccuracy: 35.55%Submissions: 8K+Points: 1
+Given a number N.Find the sum of fifth powers of natural numbers till N i.e. 15+25+35+..+N5.
+
+Example 1:
+
+Input:
+N=2
+Output:
+33
+Explanation:
+The sum is calculated as 15+25=1+32=33.
+Example 2:
+
+Input:
+N=3
+Output:
+276
+Explanation:
+The sum is calculated as 15+25+35
+=1+32+243=276.
+
+Your Task:
+You don't need to read input or print anything.Your task is to complete the function sumOfFifthPowers() which takes an integer N as input parameter and returns the sum of the fifth powers of Natural numbers till N.
+
+
+Expected Time Complexity:O(1)
+Expected Auxillary Space:O(1)
+
+
+Constraints:
+1<=N<=1000 */
+
+class Solution {
+    long sumOfFifthPowers(long N) {
+        long sum=0;
+        for(long i=1;i<=N;i++){
+            sum +=(long)Math.pow(i,5);
+        }
+        return sum;
+}
+}

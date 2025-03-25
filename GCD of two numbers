@@ -1,0 +1,31 @@
+/* GCD of two numbers
+
+Given two positive integers a and b, find GCD of a and b.
+
+Note: Don't use the inbuilt gcd function
+
+Examples:
+
+Input: a = 3, b = 6
+Output: 3
+Explanation: GCD of 3 and 6 is 3
+Input: a = 1, b = 1
+Output: 1
+Explanation: GCD of 1 and 1 is 1
+Constraints:
+1 ≤ a, b ≤ 109 */
+
+class Solution {
+    public static int gcd(int a, int b) {
+        int gcd=1;
+       for(int i=1;i<=Math.min(a,b);i++){
+           if(a%i==0 && b%i==0){
+               gcd=i;
+           }
+       }
+       return gcd;
+        
+    }
+}
+
+

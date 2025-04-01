@@ -1,0 +1,45 @@
+/* Write a program that gets n as input and print all the prime numbers till that number.
+
+Testcase 1 :
+
+Input : 
+
+5
+
+Expected output:
+
+2 3 5
+
+
+
+Testcase 2 :
+
+Input : 
+
+11
+
+Expected output:
+
+2 3 5 7 11 */
+
+
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int x=2;x<n;x++){
+            boolean isPrime=true;
+        for(int i=2;i*i<=x;i++){
+            if(x % i==0){
+                isPrime=false;
+               break;
+           }
+        }
+        if(isPrime){
+            System.out.println(x);
+             }
+        }   
+    }
+}

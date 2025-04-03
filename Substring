@@ -1,0 +1,10 @@
+//Substring
+
+class Main {
+    public static void main(String[] args) {
+        String str="Karthik";
+        String sub=str.substring(3,6);
+        System.out.println(sub);
+    }
+    
+}

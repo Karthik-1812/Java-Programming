@@ -1,5 +1,5 @@
 /* Count trailing zeroes in factorial of a number
-Last Updated : 10 Oct, 2024
+
 Given an integer n, write a function that returns count of trailing zeroes in n!. 
 
 Examples : 
